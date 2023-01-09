@@ -96,6 +96,8 @@ import TriStateCheckbox from 'primevue/tristatecheckbox';
 
 import CodeHighlight from './AppCodeHighlight';
 import BlockViewer from './BlockViewer';
+import mitt from 'mitt';
+const emitter = mitt();
 
 router.beforeEach(function(to, from, next) {
     window.scrollTo(0, 0);
@@ -103,9 +105,9 @@ router.beforeEach(function(to, from, next) {
 });
 
 const app = createApp(AppWrapper);
-
-app.config.globalProperties.$appState = reactive({ theme: 'lara-light-indigo', darkTheme: false });
-
+app.config.globalProperties.$appState = reactive({pedidos: [], pedido_add: [], theme: 'lara-light-indigo', darkTheme: false });
+app.config.globalProperties.emitter = emitter;
+//app.config.globalProperties.$appState = reactive({ theme: 'lara-dark-teal', darkTheme: true});
 app.use(PrimeVue, { ripple: true, inputStyle: 'outlined' });
 app.use(ConfirmationService);
 app.use(ToastService);
@@ -199,3 +201,27 @@ app.component('TriStateCheckbox', TriStateCheckbox);
 app.component('BlockViewer', BlockViewer);
 
 app.mount('#app');
+
+import BottomNavigation from "./components/BottomNavigation";
+
+const plugin = {
+  install(Vue) {
+    Vue.component(BottomNavigation.name, BottomNavigation);
+  },
+};
+
+BottomNavigation.install = plugin.install;
+
+let GlobalVue = null;
+
+if (typeof window !== "undefined") {
+  GlobalVue = window.Vue;
+} else if (typeof global !== "undefined") {
+  GlobalVue = global.Vue;
+}
+
+if (GlobalVue) {
+  GlobalVue.use(BottomNavigation);
+}
+
+export default BottomNavigation;

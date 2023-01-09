@@ -44,8 +44,8 @@
 			<h6 class="mt-0">Bootstrap</h6>
 			<div class="grid free-themes">
 				<div class="col-3 text-center">
-					<button class="p-link" type="button" @click="changeTheme($event, 'bootstrap4-light-blue', false)">
-						<img class="block" src="images/themes/bootstrap4-light-blue.svg" alt="Bootstrap Light Blue" />
+					<button class="p-link" type="button" @click="changeTheme($event, 'bootstrap4-dark-blue', true)">
+						<img class="block" src="images/themes/bootstrap4-dark-blue.svg" alt="Bootstrap Dark Blue" />
 					</button>
 				</div>
 				<div class="col-3 text-center">
@@ -54,8 +54,8 @@
 					</button>
 				</div>
 				<div class="col-3 text-center">
-					<button class="p-link" type="button" @click="changeTheme($event, 'bootstrap4-dark-blue', true)">
-						<img class="block" src="images/themes/bootstrap4-dark-blue.svg" alt="Bootstrap Dark Blue" />
+					<button class="p-link" type="button" @click="changeTheme($event, 'bootstrap4-light-blue', false)">
+						<img class="block" src="images/themes/bootstrap4-light-blue.svg" alt="Bootstrap Light Blue" />
 					</button>
 				</div>
 				<div class="col-3 text-center">

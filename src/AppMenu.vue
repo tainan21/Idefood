@@ -2,7 +2,8 @@
 	<div class="layout-menu-container">
 		<AppSubmenu :items="model" class="layout-menu" :root="true" @menuitem-click="onMenuItemClick" @keydown="onKeyDown" />
 		<a href="https://www.primefaces.org/primeblocks-vue" class="block mt-3">
-			<img alt="primeblocks" :src="bannerImage()" class="w-full" />
+			<Image src="images/galleria/publique-logo.png" alt="Image" width="250" preview />
+			<image src="src/" alt="primeblocks"  class="w-full" />
 		</a>
 	</div>
 </template>

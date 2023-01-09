@@ -1,0 +1,100 @@
+{
+	"data": [
+		{
+			"id": "1",
+			"code": "1",
+			"name": "Lorem Ipson",
+			"description": "Lorem Ipson",
+			"image": "filter3.jpeg",
+			"price": 1,
+			"category": "Alumínio",
+			"quantity": 1,
+			"inventoryStatus": "Em estoque",
+			"rating": 5,			
+			"optional": true
+		},
+		{
+			"id": "2",
+			"code": "2",
+			"name": "Lorem Ipson",
+			"description": "Lorem Ipson",
+			"image": "filter3.jpeg",
+			"price": 1,
+			"category": "Alumínio",
+			"quantity": 1,
+			"inventoryStatus": "Em estoque",
+			"rating": 5,			
+			"additional":[],
+			"optional": true
+		},
+		{
+			"id": "2",
+			"code": "2",
+			"name": "Lorem Ipson",
+			"description": "Lorem Ipson",
+			"image": "filter3.jpeg",
+			"price": 1,
+			"category": "Alumínio",
+			"quantity": 1,
+			"inventoryStatus": "Em estoque",
+			"rating": 5,			
+			"additional":[],
+			"optional": true
+		},
+		{
+			"id": "3",
+			"code": "3",
+			"name": "Lorem Ipson",
+			"description": "Lorem Ipson",
+			"image": "filter3.jpeg",
+			"price": 1,
+			"category": "Descartáveis",
+			"quantity": 1,
+			"inventoryStatus": "Em estoque",
+			"rating": 5,			
+			"additional":[],
+			"optional": true
+		},
+		{
+			"id": "3",
+			"code": "3",
+			"name": "Lorem Ipson",
+			"description": "Lorem Ipson",
+			"image": "filter3.jpeg",
+			"price": 1,
+			"category": "Descartáveis",
+			"quantity": 1,
+			"inventoryStatus": "Em estoque",
+			"rating": 5,			
+			"additional":[],
+			"optional": true
+		},
+		{
+			"id": "3",
+			"code": "3",
+			"name": "Lorem Ipson",
+			"description": "Lorem Ipson",
+			"image": "filter3.jpeg",
+			"price": 1,
+			"category": "Descartáveis",
+			"quantity": 1,
+			"inventoryStatus": "Em estoque",
+			"rating": 5,			
+			"additional":[],
+			"optional": true
+		},
+		{
+			"id": "3",
+			"code": "3",
+			"name": "Lorem Ipson",
+			"description": "Lorem Ipson",
+			"image": "filter3.jpeg",
+			"price": 1,
+			"category": "Descartáveis",
+			"quantity": 1,
+			"inventoryStatus": "Sem estoque",
+			"rating": 5,		
+			"optional": true
+		}
+	]
+}

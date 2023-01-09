@@ -1,0 +1,160 @@
+{
+    "data":[
+        {
+            "codigo": 1,
+            "selected": false,
+            "name": "Hambúrguer 150G",
+            "price": 8
+        },
+        {
+            "codigo": 2,
+            "selected": false,
+            "name": "Hamburguer 120G",
+            "price": 6.50
+        },
+        {
+            "codigo": 38,
+            "selected": false,
+            "name": "Hambúrguer Smash 120G",
+            "price": 6.50
+        },
+        {
+            "codigo": 39,
+            "selected": false,
+            "name": "Hambúrguer Vegetariano 120G",
+            "price": 6.50
+        },
+        {
+            "codigo": 3,
+            "selected": false,
+            "name": "Frango 200G",
+            "price": 4.50
+        },
+        {
+            "codigo": 33,
+            "selected": false,
+            "name": "Disco de Provolone Empanado",
+            "price": 7.00
+        },
+        {
+            "codigo": 34,
+            "selected": false,
+            "name": "Disco de Catupiry Empanado",
+            "price": 6.50
+        },
+        {
+            "codigo": 35,
+            "selected": false,
+            "name": "Disco de Cheddar Empanado",
+            "price": 6.00
+        },
+        {
+            "codigo": 31,
+            "selected": false,
+            "name": "Bacon",
+            "price": 3.00
+        },
+        {
+            "codigo": 4,
+            "selected": false,
+            "name": "Calabresa",
+            "price": 3.00
+        },
+        {
+            "codigo": 6,
+            "selected": false,
+            "name": "Queijo Prato",
+            "price": 2.00
+        },
+        {
+            "codigo": 7,
+            "selected": false,
+            "name": "Queijo Cheddar",
+            "price": 2.00
+        },
+        {
+            "codigo": 7,
+            "selected": false,
+            "name": "Queijo Provolone",
+            "price": 2.00
+        },
+        {
+            "codigo": 9,
+            "selected": false,
+            "name": "Cheddar Cremoso",
+            "price": 3.00
+        },
+        {
+            "codigo": 10,
+            "selected": false,
+            "name": "Catupiry Original",
+            "price": 3.00
+        },
+        {
+            "codigo": 19,
+            "selected": false,
+            "name": "Ovo",
+            "price": 1.00
+        },
+        {
+            "codigo": 12,
+            "selected": false,
+            "name": "3 Onion Rings",
+            "price": 2.00
+        },
+        {
+            "codigo": 12,
+            "selected": false,
+            "name": "Barbecue",
+            "price": 1.50
+        },
+        {
+            "codigo": 15,
+            "selected": false,
+            "name": "Pickles",
+            "price": 1.00
+        },
+        {
+            "codigo": 13,
+            "selected": false,
+            "name": "Alface",
+            "price": 0.50
+        },
+        {
+            "codigo": 14,
+            "selected": false,
+            "name": "Tomate",
+            "price": 0.50
+        },
+        {
+            "codigo": 16,
+            "selected": false,
+            "name": "Cebola Picada",
+            "price": 0.50
+        },
+        {
+            "codigo": 17,
+            "selected": false,
+            "name": "Cebola Caramelizada",
+            "price": 1.50
+        },
+        {
+            "codigo": 18,
+            "selected": false,
+            "name": "Cebola Roxa",
+            "price": 0.50
+        },
+        {
+            "codigo": 22,
+            "selected": false,
+            "name": "Molho Especial",
+            "price": 1.50
+        },
+        {
+            "codigo": 24,
+            "selected": false,
+            "name": "Molho Big Bang",
+            "price": 1.50
+        }
+    ]
+}

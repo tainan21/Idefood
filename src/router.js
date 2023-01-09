@@ -12,6 +12,17 @@ const routes = [
         name: 'formlayout',
         component: () => import('./components/FormLayoutDemo.vue')
     },
+    // preciso usar tudo isso aqui para revisar, vou esconder utilizando estilização!
+    {
+        path: '/product/:id',
+        name: 'ProductDetails',
+        component: () => import('./pages/Product.vue')
+    },
+    {
+        path: '/carrinho',
+        name: 'carrinho',
+        component: () => import('./pages/CarBurguer.vue')
+    },
     {
         path: '/input',
         name: 'input',
@@ -168,6 +179,7 @@ const routes = [
 
 const router = createRouter({
     history: createWebHashHistory(),
+    /*  history: createWebHistory(process.env.BASE_URL), */
     routes,
 });
 
