@@ -64,8 +64,8 @@
                                   </div>
                                   <div class="text-center">
                                       <img :src="'images/product/' + slotProps.data.image" :alt="slotProps.data.name" class="w-9 shadow-2 my-3 mx-0" />
-                                      <div class="text-2xl font-bold">{{ slotProps.data.name }}</div>
-                                      <div class="mb-3">{{ slotProps.data.description }}</div>
+                                      <div class="text-2xl font-bold product-title">{{ slotProps.data.name }}</div>
+                                      <div class="mb-3 product-desc">{{ slotProps.data.description }}</div>
                                   </div>
                                   <div class="flex align-items-center justify-content-between">
                                       <Toast />
@@ -389,6 +389,13 @@
     justify-content: center;
     color: #6CFF6C;
     font-family: 'Russo One', sans-serif;
+  }
+
+  .product-title{
+    color : #28292E;
+  }
+  .product-desc{
+    color: #6CFF6C;
   }
   .banner-button{
     padding: 20px;
