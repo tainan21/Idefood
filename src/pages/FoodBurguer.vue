@@ -85,7 +85,7 @@
               </div>
           </div>
       </div>
-       <div id="btn-app"> <BottomNavigation :options="options" :badge-color="badgeColor" :foreground-color="foregroundColor" v-model="selected"/> </div> 
+       <div> <BottomNavigation /> </div> 
   </template>
   <script>
   import ProductService from "../service/ProductService";
@@ -120,19 +120,12 @@
          category: null,
        },
        selected: 1,
-        options: [{
-          id: 1, icon: "pi pi-home", title: "Home", path: '../pages/faça-seu-pedido', badge: null,
-       },
-          { id: 2, icon: "pi pi-shopping-cart", title: "Carrinho", path: '../pages/carrinho', badge: null },
-      ],
-      foregroundColor: "#42A5F5",
-      badgeColor: "#FBC02D",
-    option_sort:{
-      value: null
-    },
-    order_by: 'price',
-    order_type: 1,};},
-    productService: null,
+      option_sort:{
+        value: null
+      },
+      order_by: 'price',
+      order_type: 1,};},
+      productService: null,
     computed: {
       totalAdd() {
         let total = this.total;

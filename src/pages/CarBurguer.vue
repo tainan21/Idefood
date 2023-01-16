@@ -173,7 +173,7 @@
             </div>
             <div class="footer-separator"></div>
             <div id="btn-app"> 
-                <BottomNavigation :options="navigation" :badge-color="badgeColor" :foreground-color="foregroundColor" v-model="selected"/> </div>
+                <BottomNavigation /> </div>
     </template>
     
     <script>
@@ -211,13 +211,6 @@
                     toggleValue: null,
                     toggleValue2: null,
                     dropdownItem: null,
-                    navigation: [{
-                        id: 1, icon: "pi pi-home", title: "Home", path: '../pages/faça-seu-pedido', badge: null,
-                        },
-                        { id: 2, icon: "pi pi-shopping-cart", title: "Carrinho", path: '../pages/carrinho', badge: null },
-                    ],
-                    foregroundColor: "#42A5F5",
-                    badgeColor: "#FBC02D",
                     dropdownItems: [
                         {name: ' Meu Bairro ',  code: '', price: "Free"  },                     
                     ],

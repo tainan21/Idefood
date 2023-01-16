@@ -88,7 +88,7 @@ export default {
 						{label: 'Crud', icon: 'pi pi-fw pi-user-edit', to: '/crud'},
 						{label: 'Timeline', icon: 'pi pi-fw pi-calendar', to: '/timeline'},
                         {label: 'Landing', icon: 'pi pi-fw pi-globe', to: '/landing'},
-                        {label: 'FoodBurguer', icon: 'pi pi-fw pi-heart-fill', to: '/foodburguer'},
+                        {label: 'TecnoLiaGov', icon: 'pi pi-fw pi-heart-fill', to: '/foodburguer'},
                         {label: 'Login', icon: 'pi pi-fw pi-sign-in', to: '/login'},
                         {label: 'Error', icon: 'pi pi-fw pi-times-circle', to: '/error'},
                         {label: 'NotFound', icon: 'pi pi-fw pi-exclamation-circle', to: '/notfound'},
