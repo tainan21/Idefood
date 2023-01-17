@@ -179,6 +179,7 @@ const routes = [
 
 const router = createRouter({
     history: createWebHashHistory(),
+    mode: 'history',
     /*  history: createWebHistory(process.env.BASE_URL), */
     routes,
 });
