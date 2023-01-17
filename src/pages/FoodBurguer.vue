@@ -375,7 +375,7 @@
   // background-image: url(/img/SEUMEI.f8dd4c7c.png);
     background-repeat: no-repeat;
     width: 100% !IMPORTANT;
-    height: 50VH;
+    height:60vh;
     background-color: #28292E;
     display: flex;
     align-items: center;
@@ -391,8 +391,9 @@
     color: #6CFF6C;
   }
   .banner-button{
-    padding: 20px;
-    height: 100%;
+    padding: 10px;
+    height: 25%;
+    width: 20vw;
     background-color: #6CFF6C;
     display: flex;
     border-radius: 60px;

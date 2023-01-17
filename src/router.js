@@ -1,7 +1,15 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 import Dashboard from './components/Dashboard.vue';
 
-const routes = [
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes: [
+    {
+        path: '/foodburguer',
+        name: 'foodburguer',
+        component: () => import('./pages/FoodBurguer.vue')
+    },
     {
         path: '/dashboard',
         name: 'dashboard',
@@ -146,11 +154,6 @@ const routes = [
         component: () => import('./components/IconsDemo.vue')
     },
     {
-        path: '/foodburguer',
-        name: 'foodburguer',
-        component: () => import('./pages/FoodBurguer.vue')
-    },
-    {
         path: '/landing',
         name: 'landing',
         component: () => import('./pages/LandingDemo.vue')
@@ -175,13 +178,7 @@ const routes = [
         name: 'access',
         component: () => import('./pages/Access.vue')
     }
-];
-
-const router = createRouter({
-    history: createWebHashHistory(),
-    mode: 'history',
-    /*  history: createWebHistory(process.env.BASE_URL), */
-    routes,
+    ]
 });
 
 export default router;
