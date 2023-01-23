@@ -2,3 +2,25 @@
     z-index: 1000;
     top: 7rem;
 }
+.html{
+    scroll-behavior: smooth;
+}
+
+.text-machine{
+    font-family: monospace;
+    border-right: 4px solid;
+    width: 10ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(10), blinking 0.5s infinite step-end alternate;
+}
+@keyframes typing {
+    from{
+        width: 0;
+    }
+}
+@keyframes blinking {
+    50%{
+       border-color: transparent;
+    }
+}

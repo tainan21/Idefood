@@ -4,10 +4,14 @@
 <div class="containerclass">
   <div id="btn-app">
         <div class="product">
-            <router-link to="/faça-seu-pedido" class="pi pi-fw pi-arrow-right testesicon"></router-link>
+            <router-link to="/FoodBurguer.vue" class="pi pi-fw pi-arrow-right testesicon"></router-link>
             <h5 class="productdetail">Detalhes do produto</h5>
         </div>
-        <img :src="'images/product/' + product_[0].payload.image" alt="teste" style="order-radius: 4px; margin-bottom: 20px; object-fit: cover; width: 100%" class="shadow-2 my-3 mx-0 product_image" styleClass="product_image" imageStyle="product_image" containerStyle="width: 640px" width="100" preview/>
+        <div class="product-box">
+          <div class="product-img">
+            <img :src="'images/product/' + product_[0].payload.image" alt="teste" class="shadow-2 my-3 mx-0 product_image" styleClass="product_image" imageStyle="product_image" containerStyle="width: 640px" width="100" preview/>
+          </div>
+        </div>
         <div class="flex product_list-info">
           <h5 class="text-black" style="margin-bottom: 10px; display: block; font-size: 16px; line-height: 120%; font-weight: 700;">{{product_[0].payload.name}}</h5>
             <h5 class="mb-3 pr-3 legenda" style="color: rgb(127, 143, 159); margin-bottom: 5px; font-size: 1rem; font-weight: 500; line-height: 150%; word-break: break-word;">{{product_[0].payload.description}}</h5>
@@ -189,15 +193,51 @@ img {
     background-size: cover;
     fill: cover;
 }
-.product_image img{
-    width: 100% !important;
-    height: 300px !important;
+.product-img{
+  width: 100%;
+  height: 368px;
 }
+.product-box{
+  margin-right: 0px;
+  -webkit-justify-content: center;
+  justify-content: center;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+}
+.product_image{
+  width: 100% !important;
+    height: 300px !important;
+    padding: 15px;
+    object-fit: contain;
+    -o-object-position: center;
+    padding: 16px;
+    object-position: center;
+    width: 500px;
+    aspect-ratio: auto 500 / 500;
+    height: 500px
+}
+.product_image img{
+  width: 100% !important; 
+  border-radius: 4px; 
+  margin-bottom: 20px;
+  object-fit: contain;
+  height: 200px;
+}
+
 @media only screen and (max-width: 600px) {
   .product_image{
     width: 90%;
   }
+
 }
+
 .product{
     height: 50px;
     width: 100%;

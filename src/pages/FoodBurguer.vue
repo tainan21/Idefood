@@ -29,8 +29,8 @@
                   <div class="grid grid-nogutter">
                     <Toast />
                     <div class="col-12 lg:col-4 md:col-6 sm:col-12 flex justify-content-around">
-                      <Button @click="filters.category = 'Alumínio'" icon="bx bx-restaurant" label="Alumínio" class="bg-green-custom button-filter mr-2 mt-2"/>
-                      <Button @click="filters.category = 'Descartáveis'" icon="bx bx-restaurant" label="Descartáveis" class="bg-green-custom button-filter mr-2 mt-2"/>
+                      <Button @click="filters.category = 'Alumínio'" icon="bx bx-restaurant" label="Computadores" class="bg-green-custom button-filter mr-2 mt-2"/>
+                      <Button @click="filters.category = 'Descartáveis'" icon="bx bx-restaurant" label="Filtros" class="bg-green-custom button-filter mr-2 mt-2"/>
                     </div>
                   </div>
                 </div>
@@ -375,7 +375,7 @@
   // background-image: url(/img/SEUMEI.f8dd4c7c.png);
     background-repeat: no-repeat;
     width: 100% !IMPORTANT;
-    height:60vh;
+    height: 300px;
     background-color: #28292E;
     display: flex;
     align-items: center;
@@ -391,15 +391,14 @@
     color: #6CFF6C;
   }
   .banner-button{
-    padding: 10px;
-    height: 25%;
-    width: 20vw;
+    padding: 25px 50px;
     background-color: #6CFF6C;
     display: flex;
     border-radius: 60px;
     color: white;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   
   .banner-logo{
@@ -413,12 +412,12 @@
     letter-spacing: 1px;
     line-height: 1 !important;
     font-family: 'Russo One', sans-serif;
-    font-size: 51.7px;
+    font-size: 4rem;
   }
 
   .banner-subtitle{
     line-height: 1 !important;
-    font-size: 31.5px;
+    font-size: 2.3rem;
     letter-spacing: 1px;
   }
   .banner-text{
