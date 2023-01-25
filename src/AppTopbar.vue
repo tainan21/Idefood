@@ -1,8 +1,8 @@
 <template>
 	<div class="layout-topbar">
 		<router-link to="/" class="layout-topbar-logo">
-			<img alt="Logo" :src="topbarImage()" />
-			<span>SAKAI</span>
+		<!--	<img alt="Logo" :src="topbarImage()" /> -->
+			<span>LUZS</span>
 		</router-link>
 		<button class="p-link layout-menu-button layout-topbar-button" @click="onMenuToggle">
 			<i class="pi pi-bars"></i>
@@ -45,9 +45,9 @@ export default {
 		onTopbarMenuToggle(event) {
             this.$emit('topbar-menu-toggle', event);
         },
-		topbarImage() {
+	/*	topbarImage() {
 			return this.$appState.darkTheme ? 'images/logo-white.svg' : 'images/logo-dark.svg';
-		}
+		} */
     },
 	computed: {
 		darkTheme() {

@@ -1,22 +1,23 @@
 <template>
-	<div :class="containerClass" @click="onWrapperClick">
-        <AppTopBar @menu-toggle="onMenuToggle" />
-        <div class="layout-sidebar" @click="onSidebarClick">
-            <AppMenu :model="menu" @menuitem-click="onMenuItemClick" />
-        </div>
-
-        <div class="layout-main-container">
-            <div class="layout-main">
-                <router-view />
+    <div v-if="$loged === 'true'">
+        <div :class="containerClass" @click="onWrapperClick">
+            <AppTopBar @menu-toggle="onMenuToggle" />
+            <div class="layout-sidebar" @click="onSidebarClick">
+                <AppMenu :model="menu" @menuitem-click="onMenuItemClick" />
             </div>
-            <AppFooter />
+            <div class="layout-main-container">
+                <div class="layout-main">
+                    <router-view />
+                </div>
+                <AppFooter />
+            </div>
+            <AppConfig :layoutMode="layoutMode" @layout-change="onLayoutChange" @change-theme="changeTheme" />
+            <transition name="layout-mask">
+                <div class="layout-mask p-component-overlay" v-if="mobileMenuActive"></div>
+            </transition>
         </div>
+    </div>
 
-		<AppConfig :layoutMode="layoutMode" @layout-change="onLayoutChange" @change-theme="changeTheme" />
-        <transition name="layout-mask">
-            <div class="layout-mask p-component-overlay" v-if="mobileMenuActive"></div>
-        </transition>
-	</div>
 </template>
 
 <script>

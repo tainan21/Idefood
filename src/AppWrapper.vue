@@ -1,9 +1,18 @@
 <template>
     <Landing v-if="$route.path === '/landing'" @change-theme="changeTheme" />
     <Login v-else-if="$route.path === '/login'" />
-    <FoodBurguer v-else-if="$route.path === '/foodburguer'"  />
-    <CarBurguer v-else-if="$route.path === '/carrinho'"  />
-    <Product v-else-if="$route.path === '/product'"  />
+    <div v-else-if="$route.path === '/foodburguer' || '/carrinho' || 'product'" >
+        <div v-if="$route.path === '/foodburguer'">
+            <FoodBurguer/>
+        </div>
+        <div v-if="$route.path === '/carrinho'">
+            <CarBurguer/>
+        </div>
+        <div v-if="$route.path === '/product'">
+            <Product />
+        </div>
+        <MenuBottom />
+    </div>
     <Error v-else-if="$route.path === '/error'" />
     <NotFound v-else-if="$route.path === '/notfound'" />
     <Access v-else-if="$route.path === '/access'" />
@@ -13,6 +22,7 @@
 <script>
 import EventBus from './AppEventBus';
 import App from './App';
+import MenuBottom from "./pages/BottomNave.vue"
 import Landing from './pages/LandingDemo';
 import FoodBurguer from './pages/FoodBurguer';
 import Product from './pages/Product';
@@ -40,6 +50,7 @@ export default {
         App,
         Landing,
         FoodBurguer,
+        'MenuBottom': MenuBottom,
         Product,    
         CarBurguer,
         Login,

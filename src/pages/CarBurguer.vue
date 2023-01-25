@@ -1,4 +1,5 @@
 <template>
+   
     <div class="containerclass" style="background-color: #fff">
         <div class="product">
             <router-link to="/faça-seu-pedido" class="pi pi-fw pi-arrow-right testesicon"></router-link>
@@ -6,6 +7,7 @@
             <Button label="" icon="pi pi-trash" class="p-button p-component p-button-danger m-2"  @click="esvaziar_carrinho()"/>
         </div>
             <Fieldset legend="Meus Pedidos" :toggleable="true">
+               
                   <div v-if="pedidos.length > 0">
                     <div class="md:card lg:card">
                     <div v-for="(pedido, index) in pedidos" :key="pedido.id" class="grid card_product">
@@ -177,7 +179,7 @@
     </template>
     
     <script>
-    import BottomNavigation from "../components/BottomNave.vue";
+    import BottomNavigation from "./BottomNave.vue";
     
     
         export default {

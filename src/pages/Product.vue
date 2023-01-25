@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import BottomNavigation from "./../components/BottomNave.vue";
+import BottomNavigation from "./BottomNave.vue";
 import ProductService from "../service/ProductService";
 import PhotoService from "../service/PhotoService";
 

@@ -6,8 +6,8 @@
           <div class="banner-button">baixar app agora!</div>
           <!--<p>{{ name_empresa }}</p>-->
         </div> 
-        <div class="banner-img">
-          <img src="./banner-img.png" alt="banner" class="shadow-2 my-3 mx-0 banner-img"  preview/>
+        <div class="banner-img mobile-off">
+          <img src="./banner-img.png" alt="banner" class="my-3 mx-0 banner-img"  preview/>
         </div>
         
       </div>
@@ -85,15 +85,13 @@
               </div>
           </div>
       </div>
-       <div> <BottomNavigation /> </div> 
   </template>
   <script>
   import ProductService from "../service/ProductService";
-  import BottomNavigation from "../components/BottomNave.vue";
   import moment from 'moment'
   export default {
     name: "App",
-    components: { BottomNavigation },
+    components: { },
     data() {
       return {
       name_empresa: "Filtros Nobre",
@@ -383,6 +381,13 @@
     color: #6CFF6C;
     font-family: 'Russo One', sans-serif;
   }
+  .mobile-off{
+      display: none;
+    }
+
+  @media only screen and (min-width: 300px) {
+
+  }
 
   .product-title{
     color : #28292E;
@@ -458,6 +463,7 @@
     width: 100% !important;
   }
   @media (min-width: 768px) {
+    
     .p-buttonset .p-button:first-of-type{
     width: 50% !important;
   }
@@ -523,5 +529,8 @@
   }
   .testetemplate{
     margin-bottom: 10px;
+  }
+  @media screen {
+    
   }
   </style>
